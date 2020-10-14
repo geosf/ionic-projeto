@@ -1,26 +1,22 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import "./App.css";
+import MyCards from "./myCards";
 
 const Tab3: React.FC = () => {
-  return (
-    <IonPage>
+	return (
+	<IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Pagamento</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Pagamento</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name=""/>
-      </IonContent>
-    </IonPage>
-  );
-};
+		<div className="App">
+			<MyCards />
+		</div>
+		</IonPage>
+	);
+}
 
 export default Tab3;
