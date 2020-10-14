@@ -10,12 +10,13 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { gridOutline, homeOutline, cardOutline, locateOutline, personCircleOutline } from 'ionicons/icons';
+import { personCircle, gridOutline, homeOutline, cardOutline, locateOutline, personCircleOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
+import register from './pages/register';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -46,8 +47,9 @@ const App: React.FC = () => (
           <Route path="/metodos_pagamento" component={Tab3} exact={true} />
           <Route path="/localizacao" component={Tab4} exact={true} />
           <Route path="/conta" component={Tab5} exact={true} />
+          <Route path="/register" component={register} exact={true} />
           <Route path="/" render={() => <Redirect to="/inicio" />} exact={true} />
-        </IonRouterOutlet>
+          </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/inicio">
             <IonIcon icon={homeOutline} />
