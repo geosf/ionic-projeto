@@ -1,14 +1,14 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import './Tab4.css';
 
-const Tab3: React.FC = () => {
+const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Pagamento</IonTitle>
+          <IonTitle>Localização</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -17,10 +17,12 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Pagamento</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name=""/>
+        <div className="container">
+          <p>Rua Carlos Chagas, Jardim Alcantara - Ferraz de Vasconcelos/SP</p>
+        </div>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab3;
+export default Tab4;

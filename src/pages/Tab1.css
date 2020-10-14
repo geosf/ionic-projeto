@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+  justify-content: center; 
+}
+.javascript{
+    color: yellow;
+}
+
+.restaurante{
+    color: #f542c5;
+}
+
+.js{
+    max-width: 70%;
+    max-height: auto;
+}
