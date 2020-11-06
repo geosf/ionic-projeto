@@ -1,24 +1,26 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonLabel, IonButton ,IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab4.css';
+import GeolocationButton from "./GeolocationButton";
 
 const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Localização</IonTitle>
+          <IonTitle>Geolocation</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Pagamento</IonTitle>
+            <IonTitle size="large">Geolocation</IonTitle>
           </IonToolbar>
         </IonHeader>
+
         <div className="container">
-          <p>Rua Carlos Chagas, Jardim Alcantara - Ferraz de Vasconcelos/SP</p>
+          <IonLabel>Rua Imaginaria, 12, São Roque - SP</IonLabel>
         </div>
       </IonContent>
     </IonPage>

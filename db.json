@@ -1,0 +1,28 @@
+{
+    "pratos": [{
+        "id": 1,
+        "name": "Bife a Milanesa",
+        "price": "R$20,00"
+    }, {
+        "id": 2,
+        "name": "Ribs BBQ",
+        "price": "R$30,00"
+    },
+       {
+        "id": 3,
+        "name": "Filé de Frango a Parmegiana",
+        "price": "R$25,00"
+    }, {
+        "id": 4,
+        "name": "Hámburguer",
+        "price": "R$25,00"
+    }, {
+        "id": 5,
+        "name": "Batata Frita",
+        "price": "R$15,00"
+    }, {
+        "id": 6,
+        "name": "Feijoada",
+        "price": "R$35,00"
+    }]
+}

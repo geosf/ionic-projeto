@@ -29,7 +29,7 @@ const Tab5: React.FC = () => {
     /> 
   </IonCol> 
 </IonRow>
-<form className="ion-padding">
+<form action="/register" className="ion-padding">
   <IonItem>
     <IonLabel position="floating">Usuário</IonLabel>
     <IonInput />
@@ -45,7 +45,6 @@ const Tab5: React.FC = () => {
   <IonButton className="ion-margin-top" type="submit" expand="block">
     Login
   </IonButton>
-  <p>Não possui uma conta? <a href="./register">Cadastre-se</a>.</p>
 </form>
       </IonContent>
     </IonPage>

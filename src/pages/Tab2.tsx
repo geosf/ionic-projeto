@@ -24,84 +24,9 @@ const Tab2: React.FC = () => {
         </IonHeader>
 
         <div className='container'>
-          <div className='img'>
-            <IonGrid>
-              <IonRow>
 
-                <IonCol>
-                  <img src={frango} />
-                  <p> Frango gostoso </p>
-                </IonCol>
 
-                <IonCol>
-                  <img src={bife} />
-                  <p> Bife sucolento </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-
-              </IonRow>
-            </IonGrid>
-
-            <IonGrid>
-              <IonRow>
-
-                <IonCol>
-                  <img src={frango} />
-                  <p> Frango gostoso </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={bife} />
-                  <p> Bife sucolento </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-
-              </IonRow>
-            </IonGrid>
-
-            <IonGrid>
-              <IonRow>
-
-                <IonCol>
-                  <img src={frango} />
-                  <p> Frango gostoso </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={bife} />
-                  <p> Bife sucolento </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-
-                <IonCol>
-                  <img src={lasanha} />
-                  <p> Melhor lasanha </p>
-                </IonCol>
-              </IonRow>
-            </IonGrid>
-          </div>
+            
         </div>
 
       </IonContent>

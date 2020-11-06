@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { IonCheckbox, IonButton, IonText, IonInput, IonItem, IonLabel, IonRow, IonIcon, IonCol, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useForm } from 'react-hook-form';
 import Input, { InputProps } from "../components/input";
 import { FormProvider } from 'react-hook-form';
+
 
 const Register: React.FC = () => {
   const { control, handleSubmit } = useForm();
@@ -33,9 +34,9 @@ const Register: React.FC = () => {
       <IonContent>
         <div className="ion-padding">
           <IonText color="muted">
-            <h2>Create Account</h2>
+            <h2>Criar Conta</h2>
           </IonText>
-          <form onSubmit={handleSubmit(registerUser)}>
+          <form method="POST" onSubmit={handleSubmit(registerUser)}>
             {formFields.map((field, index) => (
               <Input {...field} control={control} key={index} />
             ))}
@@ -51,6 +52,8 @@ const Register: React.FC = () => {
       </IonContent>
     </IonPage>
   );
+
+
 };
 
 export default Register;

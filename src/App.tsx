@@ -1,10 +1,12 @@
-import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import {
+  IonPage,
   IonApp,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
+  IonTab,
   IonTabBar,
   IonTabButton,
   IonTabs
@@ -36,6 +38,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
+
+import axios from 'axios';
+
 
 const App: React.FC = () => (
   <IonApp>
@@ -73,8 +79,11 @@ const App: React.FC = () => (
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
+        
     </IonReactRouter>
   </IonApp>
 );
 
+
+          
 export default App;
